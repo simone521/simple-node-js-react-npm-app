@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'docker run -d -p 5000:5000 node' 
             }
         }
     }
